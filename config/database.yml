@@ -1,0 +1,27 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  # DEV VARIABLES
+  # host: db
+  # username: postgres
+  # password: unva23azu38
+  # PRODUCTION VARIABLES
+  host: ec2-100-25-231-126.compute-1.amazonaws.com
+  username: qgppckwqgntipt
+  password: 36c32ce5ac7e11f5c3936dbc175234578c3156cd7855dc26314427661d3eed69
+  pool: 5
+
+development:
+  <<: *default
+  database: task_manager_development
+
+# Warning: The database defined as "test" will be erased and
+# re-generated from your development database when you run "rake".
+# Do not set this db to the same as development or production.
+test:
+  <<: *default
+  database: task_manager_test
+
+production:
+  <<: *default
+  database: dcnc7ct91g9tqd
