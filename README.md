@@ -1,3 +1,4 @@
+This is a copy of the original repository found at: https://github.com/richardmoonw/WAD_TaskManager
 # Forkie (Task Manager) Installation Guide
 ------
 
